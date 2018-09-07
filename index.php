@@ -13,8 +13,10 @@
 </head>
 <body>
 	<div class="jumbotron">
-		<h1>Thapar University</h1>
-		<h2>ML Projects</h2>
+		<center>
+			<h1>Thapar University</h1>
+			<h3><i>The Project Meta-Repository</i></h3>
+		</center>
 	</div>
 	<div class="container">
 		<form action="projects.php" method="GET">

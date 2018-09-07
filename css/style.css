@@ -24,7 +24,8 @@
 }
 
 .jumbotron {
-	height: 30vh;
+	height: 220px;
+	transition: all 0.5s ease-out;
 }
 
 #advanced {
@@ -39,7 +40,7 @@
 
 #arrow {
 	display: inline-block;
-	transition: all 0.25s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .inline-field {
