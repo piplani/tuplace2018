@@ -14,12 +14,12 @@
 <body>
 	<div class="jumbotron">
 		<center>
-			<h1>Thapar University</h1>
-			<h3><i>The Project Meta-Repository</i></h3>
+			<h1>ProjecTU</h1>
+			<h3><i>Thapar's Project Meta-Repository</i></h3>
 		</center>
 	</div>
 	<div class="container">
-		<form action="projects.php" method="GET">
+		<form action="list.php" method="GET">
 			<div class="ui form">
 				<div id="advanced-toggle">Advanced&nbsp;&nbsp;<div id="arrow">&#9660;</div></div>
 
