@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,89 +7,110 @@
 	<title>TU Placement</title>
 	<link rel="stylesheet"  type="" href="">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css'>
+	<script>
+		window.console = window.console || function(t) {};
+	</script>
 </head>
 <body>
-	<style>
-	/*body {background-color: powderblue;}*/
-	h1   {color: blue;}
-	/*p    {color: red;}*/
-	
-	.col-half-offset{
-    margin-left:4.166666667%
-	}
-	</style>
-	<!-- Project Domain -->
-	<form action="" method="get">
-		<div class="container">
-	    	<div class="row" style="border: 1px">
-	        	<div class="col-xs-2" id="p1">
-	    			<b>Project Domain</b><br>
-					<input type="checkbox" name="ip" value="Bike"> Image Processing<br>
-			  		<input type="checkbox" name="ap" value="Car" > Audio Processing<br>
-			  		<input type="checkbox" name="vp" value="Bike"> Video Processing<br>
-			  		<input type="checkbox" name="tp" value="Bike"> Text Processing<br>
-			  		<input type="checkbox" name="bc" value="Bike"> Blockchain<br>
-			  		<input type="checkbox" name="rs" value="Bike"> Recommendation System<br>
-			  		<input type="checkbox" name="ts" value="Bike"> Time Series<br>
-			  		<input type="checkbox" name="fi" value="Bike"> Finance<br>
-			  		<input type="checkbox" name="hc" value="Bike"> Health Care<br>
-			  		<input type="checkbox" name="dd" value="Bike"> Device Development<br>
-			  		<input type="checkbox" name="gs" value="Bike"> Geospatial<br>    		
-	        	</div>
-	        	<div class="col-xs-2 col-half-offset" id="p2">
-	    			<b>Tool Used</b><br>
-				  		<input type="checkbox" name="r" value="Bike"> R<br>
-				  		<input type="checkbox" name="py" value="Bike"> Python<br>
-				  		<input type="checkbox" name="m" value="Bike"> Matlab<br>
-				  		<input type="checkbox" name="cpp" value="Bike"> C/C++/Java<br>
-				  		<input type="checkbox" name="tf" value="Bike"> TensorFlow<br>
-				  		<input type="checkbox" name="pyt" value="Bike"> Pytorch<br>
-				  		<input type="checkbox" name="ke" value="Bike"> Keras<br>
-				  		<input type="checkbox" name="cv" value="Bike"> OPenCv<br>
-				  		<input type="checkbox" name="yo" value="Bike"> Yolo<br>    		
-	        	</div>
-	        	<div class="col-xs-2 col-half-offset" id="p3">
-	        		<b>Technique Used</b><br>
-			  		<input type="checkbox" name="r" value="Bike"> ML<br>
-			  		<input type="checkbox" name="r" value="Bike"> CNN<br>
-			  		<input type="checkbox" name="r" value="Bike"> RNN<br>
-			  		<input type="checkbox" name="r" value="Bike"> LSTM<br>
-			  		<input type="checkbox" name="r" value="Bike"> GAN<br>
-			  		<input type="checkbox" name="r" value="Bike"> Hybrid Method<br>
+<div class="container">
+	<form action="projects.php" method="GET">
+		<div class="ui form">
 
-	        	</div>
-	        	<div class="col-xs-2 col-half-offset" id="p4">
-	        		<b>Optimization Technique</b><br>
-					<input type="checkbox" name="r" value="Bike"> GA<br>
-					<input type="checkbox" name="r" value="Bike"> PSO<br>
-					<input type="checkbox" name="r" value="Bike"> DE<br>
-					<input type="checkbox" name="r" value="Bike"> GD<br>
-					<input type="checkbox" name="r" value="Bike"> Adam<br>
+			<!-- Project Domain -->
+			<div class="inline field">
+				<label>Project Domain</label>
+				<select name="domain[]" multiple="" class="label ui selection fluid dropdown">
+					<option value="">All</option>
+					<option value="Image Processing">Image Processing</option>
+					<option value="Audio Processing">Audio Processing</option>
+					<option value="Video Processing">Video Processing</option>
+					<option value="Text Processing">Text Processing</option>
+					<option value="Blockchain">Blockchain</option>
+					<option value="Recommendation System">Recommendation System</option>
+					<option value="Time Series">Time Series</option>
+					<option value="Finance">Finance</option>
+					<option value="Health Care">Health Care</option>
+					<option value="1Device Development">Device Development</option>
+					<option value="1Geospatial">Geospatial</option>
 
-	        	</div>
-	        	<div class="col-xs-2 col-half-offset" id="p5">
-	        		<b>Outcome</b><br>
-					<input type="checkbox" name="r" value="Bike"> Website<br>
-					<input type="checkbox" name="r" value="Bike"> App<br>
-					<input type="checkbox" name="r" value="Bike"> Command Line Interface<br>
-					<input type="checkbox" name="r" value="Bike"> Device<br>
-	        	</div>
-	    	</div>
+				</select>
+			</div>
+
+			<div class="inline field">
+				<label>Tools Used</label>
+				<select name="tools[]" multiple="" class="label ui selection fluid dropdown">
+					<option value="">All</option>
+					<option value="R">R</option>
+					<option value="Python">Python</option>
+					<option value="Matlab">Matlab</option>
+					<option value="C">C</option>
+					<option value="TensorFlow">TensorFlow</option>
+					<option value="Pytorch">Pytorch</option>
+					<option value="Keras">Keras</option>
+					<option value="OPenCv">OPenCv</option>
+					<option value="Yolo">Yolo</option>
+
+				</select>
+			</div>
+
+			<div class="inline field">
+				<label>Technique Used</label>
+				<select name="technique[]" multiple="" class="label ui selection fluid dropdown">
+					<option value="">All</option>
+					<option value="ML">ML</option>
+					<option value="CNN">CNN</option>
+					<option value="RNN">RNN</option>
+					<option value="LSTM">LSTM</option>
+					<option value="GAN">GAN</option>
+					<option value="Hybrid Method">Hybrid Method</option>
+				</select>
+			</div>
+
+			<div class="inline field">
+				<label>Optimization Technique Used</label>
+				<select name="opt_technique[]" multiple="" class="label ui selection fluid dropdown">
+					<option value="">All</option>
+					<option value="GA">GA</option>
+					<option value="PSO">PSO</option>
+					<option value="DE">DE</option>
+					<option value="GD">GD</option>
+					<option value="Adam">Adam</option>
+				</select>
+			</div>
+
+			<div class="inline field">
+				<label>Outcome</label>
+				<select name="outcome[]" multiple="" class="label ui selection fluid dropdown">
+					<option value="">All</option>
+					<option value="Website">Website</option>
+					<option value="App">App</option>
+					<option value="Command Line Interface">Command Line Interface</option>
+					<option value="Device">Device</option>
+				</select>
+			</div>
+
+			<input type="submit" class="ui button">
 		</div>
-  		<input type="submit" value="Submit">
 	</form>
+</div>
 </body>
 
-<?php
-	if(isset($_GET['Submit'])){
-		echo "<h1> hello</h1>";
-		foreach ($_GET as $key => $value) {
-			echo "<h1>".$key." ". $value."</h1>";
-		}
-	}
-
-?>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<div class="ui button" id="clear">
+	Clear Filters
+</div>
+<!-- <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js'></script>
+<script >
+	$('.label.ui.dropdown').dropdown();
+	$('.no.label.ui.dropdown').dropdown({useLabels: false });
+	$('#clear').on('click', function () {
+		$('.ui.dropdown').dropdown('restore defaults');
+	});
+</script>
 </html>

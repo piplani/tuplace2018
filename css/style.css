@@ -1,0 +1,28 @@
+body {
+	padding: 40px;
+}
+
+.ui.dropdown {
+	max-width: 800px;
+}
+
+@media only screen and (max-width: 767px) {
+	.ui.selection.dropdown .menu {
+		max-height: 16.02857142rem;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.ui.selection.dropdown .menu {
+		max-height: 12.0214285763rem;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.ui.selection.dropdown .menu {
+		max-height: 16.02857143rem;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	.ui.selection.dropdown .menu {
+		max-height: 21.37142857rem;
+	}
+}

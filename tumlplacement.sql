@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 07, 2018 at 11:04 AM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Generation Time: Sep 07, 2018 at 12:22 PM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -48,15 +48,33 @@ INSERT INTO `domain` (`pid`, `value`) VALUES
 
 CREATE TABLE `optimization` (
   `pid` int(11) NOT NULL,
-  `tech` varchar(1000) NOT NULL
+  `value` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `optimization`
 --
 
-INSERT INTO `optimization` (`pid`, `tech`) VALUES
-(1, 'None');
+INSERT INTO `optimization` (`pid`, `value`) VALUES
+(1, 'ga');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `outcome`
+--
+
+CREATE TABLE `outcome` (
+  `pid` int(11) NOT NULL,
+  `value` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `outcome`
+--
+
+INSERT INTO `outcome` (`pid`, `value`) VALUES
+(1, 'website');
 
 -- --------------------------------------------------------
 
@@ -89,14 +107,14 @@ INSERT INTO `project` (`pid`, `title`, `summary`, `size`, `leader`, `link`, `out
 
 CREATE TABLE `technique` (
   `pid` int(11) NOT NULL,
-  `tech` varchar(1000) NOT NULL
+  `value` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `technique`
 --
 
-INSERT INTO `technique` (`pid`, `tech`) VALUES
+INSERT INTO `technique` (`pid`, `value`) VALUES
 (1, 'ML');
 
 -- --------------------------------------------------------
@@ -107,14 +125,14 @@ INSERT INTO `technique` (`pid`, `tech`) VALUES
 
 CREATE TABLE `tools` (
   `pid` int(11) NOT NULL,
-  `tool` varchar(100) NOT NULL
+  `value` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tools`
 --
 
-INSERT INTO `tools` (`pid`, `tool`) VALUES
+INSERT INTO `tools` (`pid`, `value`) VALUES
 (1, 'R');
 
 --
@@ -131,6 +149,12 @@ ALTER TABLE `domain`
 -- Indexes for table `optimization`
 --
 ALTER TABLE `optimization`
+  ADD KEY `pid` (`pid`);
+
+--
+-- Indexes for table `outcome`
+--
+ALTER TABLE `outcome`
   ADD KEY `pid` (`pid`);
 
 --
@@ -176,6 +200,12 @@ ALTER TABLE `domain`
 --
 ALTER TABLE `optimization`
   ADD CONSTRAINT `fk1` FOREIGN KEY (`pid`) REFERENCES `project` (`pid`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `outcome`
+--
+ALTER TABLE `outcome`
+  ADD CONSTRAINT `outcome_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `project` (`pid`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `technique`
