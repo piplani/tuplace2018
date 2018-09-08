@@ -79,7 +79,7 @@ if(isset($_GET)) {
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
 			echo
-			'<div class="col-lg-4 col-sm-6 portfolio-item">
+			'<div class="col-lg-4 col-sm-6 portfolio-item my-3">
 				<div class="card h-100 px-2">
 					<div class="card-body">
 						<h4 class="card-title"><a>'.$row['title'].'</a></h4>
@@ -90,7 +90,8 @@ if(isset($_GET)) {
 			else echo 'Individual Project<br>';
 
 			$link = $row['link'];
-			if($link!=NULL && $link!='none') echo 'Link: <a href = http://' . $link . '>' . $link . '</a><br>';
+			// print_r($row);die();
+			if($link && $link!="NULL") echo 'Link: <a href = ' . $link . ' target="_new">' . $link . '</a><br>';
 
 			echo
 					'</div>

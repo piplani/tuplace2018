@@ -48,15 +48,28 @@
 						<label>Tools Used</label>
 						<select name="tools[]" multiple="" class="label ui selection fluid dropdown">
 							<option value="">All</option>
-							<option value="R">R</option>
-							<option value="Python">Python</option>
-							<option value="Matlab">Matlab</option>
-							<option value="C">C</option>
-							<option value="TensorFlow">TensorFlow</option>
-							<option value="Pytorch">Pytorch</option>
-							<option value="Keras">Keras</option>
-							<option value="OPenCv">OPenCv</option>
-							<option value="Yolo">Yolo</option>
+							<option value="assembly">Assembly</option>
+							<option value="aws">AWS</option>
+							<option value="beautifulsoup">BeautifulSoup</option>
+							<option value="c/c++/java">C/C++/Java</option>
+							<option value="gensim">Gensim</option>
+							<option value="graphlab create">Graphlab Create</option>
+							<option value="iexmap">IEXMAP</option>
+							<option value="keras">Keras</option>
+							<option value="matlab">MatLab</option>
+							<option value="numpy">Numpy</option>
+							<option value="opencv">OpenCV</option>
+							<option value="os">OS</option>
+							<option value="pandas">Pandas</option>
+							<option value="python">Python</option>
+							<option value="pytorch">Pytorch</option>
+							<option value="r">R</option>
+							<option value="rasa">Rasa</option>
+							<option value="scikit-learn">scikit-Learn</option>
+							<option value="scipy">Scipy</option>
+							<option value="tensorflow">Tensorflow</option>
+							<option value="terrier">Terrier</option>
+							<option value="tkinter">Tkinter</option>
 
 						</select>
 					</div>
