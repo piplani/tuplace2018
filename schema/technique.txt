@@ -1,0 +1,157 @@
+~ 1 ;	ML ;
+~ 2 ;	LSTM ;
+~ 2 ;	CNN ;
+~ 3 ;	GAN ;
+~ 3 ;	CNN ;
+~ 4 ;	GAN ;
+~ 4 ;	CNN ;
+~ 5 ;	CNN ;
+~ 6 ;	CNN ;
+~ 7 ;	ML ;
+~ 7 ;	CNN ;
+~ 7 ;	Statistical Analysis ;
+~ 8 ;	ML ;
+~ 8 ;	CNN ;
+~ 9 ;	GAN ;
+~ 9 ;	CNN ;
+~ 10 ;	CNN ;
+~ 11 ;	ML ;
+~ 12 ;	ML ;
+~ 12 ;	CNN ;
+~ 13 ;	ML ;
+~ 14 ;	ML ;
+~ 15 ;	ML ;
+~ 15 ;	CNN ;
+~ 16 ;	LSTM ;
+~ 16 ;	CNN ;
+~ 17 ;	ML ;
+~ 18 ;	ML ;
+~ 18 ;	CNN ;
+~ 18 ;	RNN ;
+~ 18 ;	ARIMA ;
+~ 19 ;	ML ;
+~ 20 ;	ML ;
+~ 20 ;	CNN ;
+~ 21 ;	ML ;
+~ 21 ;	LSTM ;
+~ 22 ;	ML ;
+~ 23 ;	ML ;
+~ 24 ;	ML ;
+~ 24 ;	CNN ;
+~ 24 ;	Hybrid ;
+~ 25 ;	ML ;
+~ 26 ;	ML ;
+~ 27 ;	ML ;
+~ 28 ;	ML ;
+~ 29 ;	Hybrid ;
+~ 29 ;	ML ;
+~ 30 ;	NULL ;
+~ 31 ;	NULL ;
+~ 32 ;	ML ;
+~ 33 ;	Other ;
+~ 34 ;	ML ;
+~ 34 ;	CNN ;
+~ 35 ;	Collaborative Filtering ;
+~ 36 ;	ML ;
+~ 37 ;	ML ;
+~ 38 ;	ML ;
+~ 38 ;	CNN ;
+~ 38 ;	RNN ;
+~ 38 ;	LSTM ;
+~ 38 ;	GAN ;
+~ 39 ;	ML ;
+~ 40 ;	ML ;
+~ 40 ;	CNN ;
+~ 41 ;	RNN ;
+~ 42 ;	ML ;
+~ 43 ;	CNN ;
+~ 44 ;	RNN ;
+~ 44 ;	LSTM ;
+~ 45 ;	ML ;
+~ 45 ;	Hybrid ;
+~ 46 ;	ML ;
+~ 47 ;	CNN ;
+~ 48 ;	ML ;
+~ 48 ;	CNN ;
+~ 49 ;	Hybrid Method ;
+~ 50 ;	ML ;
+~ 50 ;	RNN ;
+~ 50 ;	LSTM ;
+~ 51 ;	ML ;
+~ 52 ;	ML ;
+~ 53 ;	ML
+~ 53 ;	Rain Forest ;
+~ 54 ;	Artificial Neural Network ;
+~ 55 ;	ML
+~ 55 ; Naive Bayes Classifier  ;
+~ 56 ;	ML
+~ 56 ; Neural Network ;
+~ 57 ;	CNN ;
+~ 58 ;	ML
+~ 58 ; CountVectorizer
+~ 58 ; TfidfVectorizer ;
+~ 59 ;	ML
+~ 59 ; Numpy
+~ 59 ; Pandas
+~ 59 ; Matplotlib
+~ 59 ; Seaborn ;
+~ 60 ;	Sentiment Analysis ;
+~ 61 ;	ML
+~ 61 ; CNN
+~ 61 ; Image Segmentation ;
+~ 62 ;	ML ;
+~ 62 ;	CNN ;
+~ 63 ;	word2vec ;
+~ 64 ;	CNN ;
+~ 65 ;	ML ;
+~ 66 ;	ML ;
+~ 66 ;	CNN ;
+~ 67 ;	CNN ;
+~ 68 ;	ML ;
+~ 69 ;	CNN
+~ 69 ; RNN
+~ 69 ; LSTM
+~ 69 ; Hybrid  ;
+~ 70 ;	ML ;
+~ 70 ;	CNN ;
+~ 71 ;	ML ;
+~ 71 ;	LSTM ;
+~ 72 ;	ML
+~ 72 ; Hybrid Method ;
+~ 73 ;	ML
+~ 73 ; CNN
+~ 73 ; Hybrid
+~ 73 ; SAE ;
+~ 74 ;	ML ;
+~ 74 ;	CNN ;
+~ 75 ;	ML
+~ 75 ; CNN
+~ 75 ; Keras Retinanet ;
+~ 76 ;	ML ;
+~ 77 ;	ML
+~ 77 ; Web Scraping ;
+~ 78 ;	ML
+~ 78 ; Web Scraping ;
+~ 79 ;	ML ;
+~ 80 ;	ML ;
+~ 80 ;	CNN ;
+~ 81 ;	CNN ;
+~ 82 ;	ML ;
+~ 83 ;	ML ;
+~ 84 ;	ML ;
+~ 84 ;	CNN ;
+~ 85 ;	ML
+~ 85 ; RNN
+~ 85 ; GAN ;
+~ 86 ;	ML
+~ 86 ; CNN
+~ 86 ; RNN ;
+~ 87 ;	ML ;
+~ 87 ;	RNN ;
+~ 87 ;	LSTM ;
+~ 88 ;	NULL ;
+~ 89 ;	CNN ;
+~ 90 ;	ML
+~ 90 ; Hybrid ;
+~ 91 ;	ML ;
+~ 91 ;	CNN ;
