@@ -72,26 +72,30 @@ if(isset($_GET)) {
 	$sql = $sql . $sql1;
 	$sql = $sql . $sql2;
 	$sql = $sql . $sql3;
-	// echo $sql;
+	$sql = $sql . "ORDER BY title";
 
 	$result = $con->query($sql);
 
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
-			echo
-			'<div class="col-lg-4 col-sm-6 portfolio-item my-3">
-				<div class="card h-100 px-2">
-					<div class="card-body">
-						<h4 class="card-title"><a>'.$row['title'].'</a></h4>
-						<p class="card-text">'.$row['summary'].'</p>';
-
 			$team = $row['size'];
-			if($team>1) echo 'Team Size: ' . $team . '<br>';
-			else echo 'Individual Project<br>';
-
 			$link = $row['link'];
-			// print_r($row);die();
-			if($link && $link!="NULL") echo 'Link: <a href = ' . $link . ' target="_new">' . $link . '</a><br>';
+			// echo "<h1>".$row['summary']."</h1>";
+			$title = (strlen($row['title']) > 100) ? ucwords(substr($row['title'],0,100))."..." : ucwords($row['title']);
+			$summary = (strlen($row['summary']) > 300) ? substr($row['summary'],0,300)."..." : $row['summary'];
+
+			echo
+			'<div class="col-lg-4 col-sm-6 portfolio-item my-3 card-outer">
+				<div class="card h-100 px-2" onclick="location.href=\'project.php?id='.$row['pid'].'\'">
+					<div class="card-body">
+						<h4 class="card-title">'.$title.'</h4>';
+			if($link) echo '<a href = ' . $link . ' target="_new" style="color:#1E70BF;">' . $link . '</a>';
+			echo
+						'	<hr><p class="card-text card-text-min">'.$summary.'</p><hr>';
+
+			if($team>1) echo 'Group Project (' . $team . ' members)<br>Leader: '.$row['leader'].'<br>';
+			else echo 'Individual Project<br>'.$row['leader'].'<br>';
+
 
 			echo
 					'</div>
