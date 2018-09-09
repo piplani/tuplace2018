@@ -28,18 +28,24 @@
 					<label>Project Domain</label>
 					<select name="domain[]" multiple="" class="label ui selection fluid dropdown">
 						<option value="">All</option>
-						<option value="Image Processing">Image Processing</option>
-						<option value="Audio Processing">Audio Processing</option>
-						<option value="Video Processing">Video Processing</option>
-						<option value="Text Processing">Text Processing</option>
-						<option value="Blockchain">Blockchain</option>
-						<option value="Recommendation System">Recommendation System</option>
-						<option value="Time Series">Time Series</option>
-						<option value="Finance">Finance</option>
-						<option value="Health Care">Health Care</option>
-						<option value="1Device Development">Device Development</option>
-						<option value="1Geospatial">Geospatial</option>
-
+						<option value="audio processing"> Audio Processing </option>
+						<option value="blockchain">Blockchain</option>
+						<option value="classification"> Classification </option>
+						<option value="deep learning"> Deep Learning </option>
+						<option value="device development"> Device Development </option>
+						<option value="finance"> Finance </option>
+						<option value="geo informatics"> Geo Informatics </option>
+						<option value="health care"> Health Care </option>
+						<option value="image processing"> Image Processing </option>
+						<option value="information retrieval"> Information Retrieval </option>
+						<option value="machine learning"> Machine Learning </option>
+						<option value="optimization"> Optimization </option>
+						<option value="real time processing"> Real time Processing </option>
+						<option value="recommendation system"> Recommendation System </option>
+						<option value="text processing"> Text Processing </option>
+						<option value="time series"> Time Series </option>
+						<option value="video processing"> Video Processing </option>
+						<option value="web-scraping"> Web-Scraping </option>
 					</select>
 				</div>
 
@@ -70,7 +76,6 @@
 							<option value="tensorflow">Tensorflow</option>
 							<option value="terrier">Terrier</option>
 							<option value="tkinter">Tkinter</option>
-
 						</select>
 					</div>
 
@@ -78,12 +83,32 @@
 						<label>Technique Used</label>
 						<select name="technique[]" multiple="" class="label ui selection fluid dropdown">
 							<option value="">All</option>
-							<option value="ML">ML</option>
-							<option value="CNN">CNN</option>
-							<option value="RNN">RNN</option>
-							<option value="LSTM">LSTM</option>
-							<option value="GAN">GAN</option>
-							<option value="Hybrid Method">Hybrid Method</option>
+							<option value = "ARIMA"> ARIMA </option>
+							<option value = "artificial neural network"> Artificial Neural Network </option>
+							<option value = "CNN"> CNN </option>
+							<option value = "collaborative filtering"> Collaborative Filtering </option>
+							<option value = "count vectorizer"> Count Vectorizer </option>
+							<option value = "GAN"> GAN </option>
+							<option value = "hybrid"> Hybrid </option>
+							<option value = "image segmentation"> Image Segmentation </option>
+							<option value = "keras retinanet"> Keras Retinanet </option>
+							<option value = "LSTM"> LSTM </option>
+							<option value = "matplotlib"> Matplotlib </option>
+							<option value = "ML"> ML </option>
+							<option value = "naive bayes classifier"> Naive Bayes Classifier </option>
+							<option value = "neural network"> Neural Network </option>
+							<option value = "numpy"> Numpy </option>
+							<option value = "pandas"> Pandas </option>
+							<option value = "rain forest"> Rain Forest </option>
+							<option value = "RNN"> RNN </option>
+							<option value = "SAE"> SAE </option>
+							<option value = "seaborn"> Seaborn </option>
+							<option value = "sentiment analysis"> Sentiment Analysis </option>
+							<option value = "statistical analysis"> Statistical Analysis </option>
+							<option value = "tf-idf vectorizer"> Tf-idf Vectorizer </option>
+							<option value = "web scraping"> Web Scraping </option>
+							<option value = "word2vec"> word2vec </option>
+							<option value = "other"> Other </option>
 						</select>
 					</div>
 
@@ -91,11 +116,23 @@
 						<label>Optimization Technique Used</label>
 						<select name="opt_technique[]" multiple="" class="label ui selection fluid dropdown">
 							<option value="">All</option>
-							<option value="GA">GA</option>
-							<option value="PSO">PSO</option>
-							<option value="DE">DE</option>
-							<option value="GD">GD</option>
-							<option value="Adam">Adam</option>
+							<option value = "ADAM"> ADAM </option>
+							<option value = "ALO"> ALO </option>
+							<option value = "Bayesian Optimization"> Bayesian Optimization </option>
+							<option value = "DE"> DE </option>
+							<option value = "GA"> GA </option>
+							<option value = "GD"> GD </option>
+							<option value = "GWO"> GWO </option>
+							<option value = "Locality sensitive hashing"> Locality Sensitive Hashing </option>
+							<option value = "MVO"> MVO </option>
+							<option value = "NADAM"> NADAM </option>
+							<option value = "NLP"> NLP </option>
+							<option value = "PSO"> PSO </option>
+							<option value = "SCA"> SCA </option>
+							<option value = "SG"> SG </option>
+							<option value = "SGD"> SGD </option>
+							<option value = "WOA"> WOA </option>
+							<option value = "XGBOOST"> XGBOOST </option>
 						</select>
 					</div>
 
@@ -103,10 +140,20 @@
 						<label>Outcome</label>
 						<select name="outcome[]" multiple="" class="label ui selection fluid dropdown">
 							<option value="">All</option>
-							<option value="Website">Website</option>
-							<option value="App">App</option>
-							<option value="Command Line Interface">Command Line Interface</option>
-							<option value="Device">Device</option>
+							<option value = "algorithm"> Algorithm </option>
+							<option value = "app"> App </option>
+							<option value = "audio"> Audio </option>
+							<option value = "brain"> Brain </option>
+							<option value = "cli"> CLI </option>
+							<option value = "desktop application"> Desktop Application </option>
+							<option value = "device"> Device </option>
+							<option value = "gui"> GUI </option>
+							<option value = "image"> Image </option>
+							<option value = "model"> Model </option>
+							<option value = "publication"> Publication </option>
+							<option value = "research paper"> Research paper </option>
+							<option value = "script"> Script </option>
+							<option value = "website"> Website </option>
 						</select>
 					</div>
 
