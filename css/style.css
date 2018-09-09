@@ -1,3 +1,13 @@
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1E70BF;
+	text-decoration: underline;
+}
+
 .ui.dropdown {
 	max-width: 800px;
 }
@@ -26,6 +36,7 @@
 .jumbotron {
 	height: 220px;
 	transition: all 0.5s ease-out;
+	border-radius: 0;
 }
 
 #advanced {
@@ -45,4 +56,22 @@
 
 .inline-field {
 	width: 100%;
+}
+
+.card-text-min {
+	overflow: hidden;
+}
+
+.card {
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+	border-radius: 5px;
+}
+
+.card:hover {
+	background-color: #f6f6f6;
+}
+
+.fa-arrow-alt-circle-left {
+	cursor: pointer;
 }
