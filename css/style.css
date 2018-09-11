@@ -34,8 +34,10 @@ a:hover {
 }
 
 .jumbotron {
+	background-image: url('../img/cover.jpg');
+	background-size: cover;
 	height: 220px;
-	transition: all 0.5s ease-out;
+	transition: height 0.5s ease-out;
 	border-radius: 0;
 }
 
@@ -51,7 +53,7 @@ a:hover {
 
 #arrow {
 	display: inline-block;
-	transition: all 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
 }
 
 .inline-field {
@@ -63,12 +65,15 @@ a:hover {
 }
 
 .card {
-	cursor: pointer;
-	transition: all 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
 	border-radius: 5px;
 }
 
-.card:hover {
+.list-card {
+	cursor: pointer;
+}
+
+.list-card:hover {
 	background-color: #f6f6f6;
 }
 
