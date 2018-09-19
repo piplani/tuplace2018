@@ -1,0 +1,14 @@
+.field {
+	display: inline-block;
+	margin-right: 10px;
+	padding-left: 15px;
+	min-width: 200px;
+}
+
+.field:first-of-type {
+	padding: 0;
+}
+
+#browse {
+	width: 150px;
+}

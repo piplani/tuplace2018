@@ -3,6 +3,113 @@ require_once 'connection.php';
 
 if(isset($_GET)) {
 
+	echo
+		'<div>
+			<div>
+				<form class="form-inline" action="list.php" method="GET">
+					<div class="ui form">
+
+						<!-- Project Domain -->
+						<div class="inline field">
+							<label>Project Domain</label>
+							<select name="domain[]" multiple="" class="label ui selection fluid dropdown">
+								<option value="">All</option>';
+
+	$q = "SELECT DISTINCT value FROM domain ORDER BY value";
+	$res = $con->query($q);
+	for($i = 0; $i<$res->num_rows; $i++) {
+		$row = $res->fetch_assoc();
+		if(in_array($row['value'],$_GET['domain']))
+			echo '<option value="'.$row['value'].'" selected>'.ucwords($row['value']).'</option>';
+		else
+			echo '<option value="'.$row['value'].'" >'.ucwords($row['value']).'</option>';
+	}
+
+	echo
+							'</select>
+						</div>
+
+						<div class="inline field">
+							<label>Tools Used</label>
+							<select name="tools[]" multiple="" class="label ui selection fluid dropdown">
+								<option value="">All</option>';
+
+	$q = "SELECT DISTINCT value FROM tools ORDER BY value";
+	$res = $con->query($q);
+	for($i = 0; $i<$res->num_rows; $i++) {
+		$row = $res->fetch_assoc();
+		if(in_array($row['value'],$_GET['tools']))
+			echo '<option value="'.$row['value'].'" selected>'.ucwords($row['value']).'</option>';
+		else
+			echo '<option value="'.$row['value'].'" >'.ucwords($row['value']).'</option>';
+	}
+
+	echo
+							'</select>
+						</div>
+
+						<div class="inline field">
+							<label>Technique Used</label>
+							<select name="technique[]" multiple="" class="label ui selection fluid dropdown">
+								<option value="">All</option>';
+
+	$q = "SELECT DISTINCT value FROM technique ORDER BY value";
+	$res = $con->query($q);
+	for($i = 0; $i<$res->num_rows; $i++) {
+		$row = $res->fetch_assoc();
+		if(in_array($row['value'],$_GET['technique']))
+			echo '<option value="'.$row['value'].'" selected>'.ucwords($row['value']).'</option>';
+		else
+			echo '<option value="'.$row['value'].'" >'.ucwords($row['value']).'</option>';
+	}
+
+	echo
+							'</select>
+						</div>
+
+						<div class="inline field">
+							<label>Optimization Technique Used</label>
+							<select name="opt_technique[]" multiple="" class="label ui selection fluid dropdown">
+								<option value="">All</option>';
+
+	$q = "SELECT DISTINCT value FROM optimization ORDER BY value";
+	$res = $con->query($q);
+	for($i = 0; $i<$res->num_rows; $i++) {
+		$row = $res->fetch_assoc();
+		if(in_array($row['value'],$_GET['opt_technique']))
+			echo '<option value="'.$row['value'].'" selected>'.ucwords($row['value']).'</option>';
+		else
+			echo '<option value="'.$row['value'].'" >'.ucwords($row['value']).'</option>';
+	}
+
+	echo
+							'</select>
+						</div>
+
+						<div class="inline field">
+							<label>Outcome</label>
+							<select name="outcome[]" multiple="" class="label ui selection fluid dropdown">
+								<option value="">All</option>';
+
+	$q = "SELECT DISTINCT value FROM outcome ORDER BY value";
+	$res = $con->query($q);
+	for($i = 0; $i<$res->num_rows; $i++) {
+		$row = $res->fetch_assoc();
+		if(in_array($row['value'],$_GET['outcome']))
+			echo '<option value="'.$row['value'].'" selected>'.ucwords($row['value']).'</option>';
+		else
+			echo '<option value="'.$row['value'].'" >'.ucwords($row['value']).'</option>';
+	}
+
+	echo
+							'</select>
+						</div>
+						<input type="submit" class="ui button" id="browse" value="Browse Projects">
+					</div>
+				</form>
+			</div>
+		</div>';
+
 	$domain = '';
 	$tools = '';
 	$technique = '';
