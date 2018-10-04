@@ -17,3 +17,7 @@ advanced_toggle.click(function(event) {
 	}
 	expanded = !expanded;
 });
+
+function back() {
+	window.history.go(-1);
+}

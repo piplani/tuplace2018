@@ -5,6 +5,11 @@
 	min-width: 200px;
 }
 
+#j1 {
+	background-image: none;
+	background-color: #F6F6F6;
+}
+
 .field:first-of-type {
 	padding: 0;
 }

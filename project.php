@@ -11,7 +11,7 @@
 	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-	<div class="jumbotron" style="height: 180px;">
+	<div class="jumbotron jumbotron-main mb-4" style="height: 180px;">
 		<center>
 			<h1>ProjecTU</h1>
 			<h3><i>Thapar's Project Meta-Repository</i></h3>
@@ -33,7 +33,8 @@
 						echo
 						'<div class="col-lg-8">
 							<h1 class="mt-4">
-								<i class="fas fa-arrow-alt-circle-left" onclick="window.history.go(-1); return false;"></i>&nbsp;&nbsp;'.
+								<i class="fas fa-arrow-alt-circle-left" onclick="back(); return false;"></i>&nbsp;&nbsp;P1'.
+								$pid.'. '.
 								$row['title'].
 							'</h1>
 							<p class="lead">
@@ -183,7 +184,7 @@
 								$techniqueRow = $techniqueRes->fetch_assoc();
 								echo
 												'<li>
-													<a href="list.php?technique='.$techniqueRow['value'].'">'.ucwords($techniqueRow['value']).'</a>
+													<a href="list.php?technique[]='.$techniqueRow['value'].'">'.ucwords($techniqueRow['value']).'</a>
 												</li>';
 							}
 							echo
@@ -195,7 +196,7 @@
 								$techniqueRow = $techniqueRes->fetch_assoc();
 								echo
 												'<li>
-													<a href="list.php?technique='.$techniqueRow['value'].'">'.ucwords($techniqueRow['value']).'</a>
+													<a href="list.php?technique[]='.$techniqueRow['value'].'">'.ucwords($techniqueRow['value']).'</a>
 												</li>';
 							}
 							echo
@@ -253,6 +254,7 @@
 	</div>
 
 	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

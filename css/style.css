@@ -34,11 +34,17 @@ a:hover {
 }
 
 .jumbotron {
+	background-color: #F2FAF9;
+	padding: 30px;
+}
+
+.jumbotron-main {
 	background-image: url('../img/cover.jpg');
 	background-size: cover;
 	height: 220px;
 	transition: height 0.5s ease-out;
 	border-radius: 0;
+	margin-bottom: 0;
 }
 
 #advanced {

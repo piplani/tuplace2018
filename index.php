@@ -12,7 +12,7 @@
 	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-	<div class="jumbotron">
+	<div class="jumbotron jumbotron-main mb-4">
 		<center>
 			<h1>ProjecTU</h1>
 			<h3><i>Thapar's Project Meta-Repository</i></h3>
