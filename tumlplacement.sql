@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2018 at 09:29 AM
+-- Generation Time: Oct 06, 2018 at 12:01 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -82,8 +82,6 @@ INSERT INTO `domain` (`pid`, `value`) VALUES
 (29, 'text processing'),
 (30, 'video processing'),
 (30, 'image processing'),
-(31, 'image processing'),
-(31, 'video processing'),
 (32, 'image processing'),
 (33, 'optimization'),
 (34, 'health care'),
@@ -166,7 +164,18 @@ INSERT INTO `domain` (`pid`, `value`) VALUES
 (90, 'device development'),
 (90, 'health care'),
 (91, 'device development'),
-(91, 'image processing');
+(91, 'image processing'),
+(111, 'health care'),
+(111, 'text processing'),
+(111, 'sentiment analysis'),
+(112, 'image processing'),
+(110, 'image processing'),
+(110, 'text processing'),
+(110, 'device development'),
+(109, 'predcitive analysis'),
+(108, 'text processing'),
+(107, 'time series'),
+(106, 'text processing');
 
 -- --------------------------------------------------------
 
@@ -249,7 +258,12 @@ INSERT INTO `optimization` (`pid`, `value`) VALUES
 (87, 'GD'),
 (87, 'ADAM'),
 (90, 'PSO'),
-(91, 'GD');
+(91, 'GD'),
+(112, 'RMSPROP'),
+(112, 'ADAM'),
+(108, 'ADAM'),
+(108, 'RMSPROP'),
+(107, 'ADAM');
 
 -- --------------------------------------------------------
 
@@ -299,7 +313,6 @@ INSERT INTO `outcome` (`pid`, `value`) VALUES
 (28, 'device'),
 (29, 'CLI'),
 (30, 'brain'),
-(31, 'brain'),
 (32, 'script'),
 (33, 'GUI'),
 (34, 'website'),
@@ -361,7 +374,15 @@ INSERT INTO `outcome` (`pid`, `value`) VALUES
 (88, 'CLI'),
 (89, 'app'),
 (90, 'device'),
-(91, 'device');
+(91, 'device'),
+(111, 'web app'),
+(112, 'CLI'),
+(110, 'CLI'),
+(110, 'device'),
+(109, 'CLI'),
+(108, 'CLI'),
+(107, 'CLI'),
+(106, 'CLI');
 
 -- --------------------------------------------------------
 
@@ -396,7 +417,7 @@ INSERT INTO `project` (`pid`, `title`, `summary`, `size`, `leader`, `link`) VALU
 (11, 'OxAct: Activity Prediction against Oxdidative Stress  ', 'To develop a multilevel prediction scheme for ARE( Anti-oxidant Response Element ) molecules using knowledge discovery process and classification &  regression techniques, using models namely decision tree, linear regression, support vector machines, neural network and ada-boost. Helpful in knowing the activeness of molecules against stress controlling action and define efficacy and potency score for the same.', 1, 'lih.verma@gmail.com  ', ''),
 (12, 'AutoHand : Automatic handwriting processor  ', 'Intelligent Handwriting Character Recognition is one of the field very less touched and worked upon. Various OCR engines work for English language but that too not handwritten data. The Aim to work on this project is, the processing of Handwritten images and extract something meaningful out of it. Here we are trying to build an automatic processor for handwritten images and compare them for purposes as forgery or text to audio aiding for deaf and dumb.', 2, 'lih.verma@gmail.com  ', 'https://github.com/lihkinVerma/Automatic-Handwriting-Processing  '),
 (13, 'Document classification  ', 'Tried to build a text classification system using Naïve Bayesian approach and laplace smoothing as mathematical paradigm and dataset of famous 20NewsGroup dataset to classify any new document into its particular domain.', 1, 'lih.verma@gmail.com  ', 'https://github.com/lihkinVerma/Text-Classification-using-Naive-Bayes-in-Python  '),
-(14, 'Age, Gender, Makeup and Illumination Prediction from faces using Ensemble Modelling  ', '•	Collected database from Indian Movie Face Database (IMFDB) and Extracted features using Histogram of Oriented Gradients (HOG) and Local Binary Pattern (LBP)._x000D_\r\n•	Applied 10 machine learning models and after that applied Ensemble Model by taking the average of top 3 models._x000D_\r\n•	Technology Used: Machine Learning, MATLAB, R._x000D_\r\n', 3, 'Kundan Nigam, 8195906102, kundankumarnigam97@gmail.com    ', 'https://github.com/kundan20/Research-Paper  '),
+(14, 'Age, Gender, Makeup and Illumination Prediction from faces using Ensemble Modelling  ', 'Collected database from Indian Movie Face Database (IMFDB) and Extracted features using Histogram of Oriented Gradients (HOG) and Local Binary Pattern (LBP).<br>Applied 10 machine learning models and after that applied Ensemble Model by taking the average of top 3 models.\r\n<br>Technology Used: Machine Learning, MATLAB, R.', 3, 'Kundan Nigam, 8195906102, kundankumarnigam97@gmail.com    ', 'https://github.com/kundan20/Research-Paper  '),
 (15, 'F-Unlock - Face Recognition based unlocking system  ', 'The project \"F-Unlock\" uses facial recognition for door unlocking system in Thapar Institute of Engineering & Technology, We assessed various machine learning models specific to face recognition, comparing their accuracies._x000D_\r\nThe face is recognized using webcam in real time which is connected to Raspberry Pi. In case of successful authentication, the raspberry pi commands the relay to unlock the lock & hence door._x000D_\r\nThis product addresses the problem of robbery by alarming the system when third person is trying to enter the premises. The product along with solving the problem of theft, also solves the problem of distant/remote access through special permission grant feature using mobile/web application by the owner of premises.', 3, 'Ajay Jindal, 9041212980, ajay96jindal@gmail.com  ', ''),
 (16, 'Tacotron  ', 'A deep learning model architecture to generate human speech signals from text .Implemented using google\'s tacotron2 research paper.', 1, 'Sanket Bansal, 7087305883, sanketbansal57@gmail.com  ', 'https://github.com/sanketbansal/Tacotron  '),
 (17, 'Fake News Detection  ', 'This project\'s aim was to establish a premise that \"Fake News\" can be tackled using machine learning & natural language processing, because since the 2016 presidential election, one topic dominating political discourse is the issue of “Fake News”. A number of political experts claim that the rise of significantly biased and/or untrue news influenced the election. That’s exactly what we attempted to do for this project. We assembled a dataset of fake and real news and employed a Naive Bayes classifier and Passive Aggressive classifier in order to create a model to classify an article as fake or real based on its words and phrases. The purpose of this project was to see how far we could get in creating a fake news classification and what insights could be drawn from that, then use those towards building a better model.', 3, 'Ajay Jindal, 9041212980, ajay96jindal@gmail.com  ', 'https://github.com/ajayjindal/Fake-News-Detection  '),
@@ -412,7 +433,6 @@ INSERT INTO `project` (`pid`, `title`, `summary`, `size`, `leader`, `link`) VALU
 (27, 'Breast cancer prediction  ', 'Web application(using Django framework) which predicts whether a person is having a breast cancer or not, by applying supervised machine learning algorithms on a given dataset.', 1, 'Mayank Jain, 9414339369, mayankj29121996@gmail.com  ', ''),
 (29, 'Browser Automation  ', 'This Project aims on the automation of google chrome for growing your LinkedIn connection on the basis of the field that you want.The Python script in this repository has been compiled on a windows 10 machine equipped with Google Chromedriver and is running successfully for the LinkedIn version 2016.', 1, 'Madhav Malik, 9915034727, madhavmalik16@gmail.com  ', 'https://github.com/madhavmalik16/Browser-automation-for-growing-LinkedIn-connections-using-Selenium  '),
 (30, 'Car colour recogniser  ', 'Tells what colour the car is.', 5, 'Qwerty  ', ''),
-(31, 'Car colour recogniser  ', 'Tells what colour the car is.', 5, 'Qwerty  ', ''),
 (32, 'Facial Key points detection  ', 'The objective of this project is to predict keypoint positions on facial images. This can be used as a building block in several applications, such as:_x000D_\r\n1. Tracking faces in images and video_x000D_\r\n2. Analysing facial expressions_x000D_\r\n3. Detecting dysmorphic facial signs for medical diagnosis_x000D_\r\n4. Biometrics / Face Recognition_x000D_\r\nThis is a regression problem , we are given a dataset having some known facial key-points and the system has to find other key-points. A model was built to solve the issue, name of which was \'Average Patch Model\' . The idea is to extract a patch around every keypoint in each image, and average the result. This average_patch can then be used as a mask to search for the keypoint in test images.we do this for each of the keypoints such as  eyes(both individually), ears(same thing), nose etc. In total, we have 7049 rows, each one with 31 columns. The first 30 columns are keypoint locations which were correctly identified as numbers. The last one is a string representation of the image, identified as a string. The dataset was divided into two parts 80% for training dataset and the rest for test dataset.', 1, 'Shivam Thaman , 9988671086, shivam23thaman@gmail.com  ', ''),
 (33, 'Soft Computing Optimization Toolbox  ', 'Soft Computing Optimization Toolbox (S.C.O.T)_x000D_\r\nis a Matlab -based GUI toolbox designed to facilitate solutions_x000D_\r\nto optimization problems using metaheuristics. It incorporates_x000D_\r\nSix Algorithms._x000D_\r\nThese Algorithms have their own GUI. Using this toolbox user_x000D_\r\ncan Choose any Algorithm according to his need. There are_x000D_\r\ngraphical interpretations to depict the working of these_x000D_\r\nAlgorithms with their optimal values. It is a flexible, extensible,_x000D_\r\nand easy-to-use software package that can be used in a wide_x000D_\r\nrange of applications. ', 3, 'Shivam Thaman, 9988671086, shivam23thaman@gmail.com  ', 'https://github.com/Shivam23Thaman/Soft-computing-optimization-Toolbox  '),
 (34, 'Disease detection using Xray images  ', 'A project based on CNN(convolutional neural networks) that can detect diseases when the model gets trained fully on the sample images of the downloaded dataset.', 4, 'Shashank shukla 9781940964  ', ''),
@@ -422,7 +442,7 @@ INSERT INTO `project` (`pid`, `title`, `summary`, `size`, `leader`, `link`) VALU
 (38, 'Multiple Projects(CNN(skin cancer classification,dogbreed app, cats vs dog),RNN(tv script generator), GAN(face generator)  ', 'My main interest lies in computer vision so I\'ve worked on skin cancer classification using transfer learning,Also the dog breed app detector which identifies breed of a dog and My most interesting project was the tv script generator which shows how RNN and LSTM cells can be used to predict entirely new stuff and not just learn and be bounded by parameters.', 1, 'Rohan Leekha 9990498843 leekharohan@gmail.com  ', 'https://github.com/rohan7797?tab=repositories  '),
 (39, 'Fault Detection in Three Phase Transformer  Using Ensemble Model  ', 'Three phase transformers are an important part of electrical power distribution systems. This type of transformer is_x000D_\r\ncomposed of primary and secondary windings and can be connected in either star or delta formations. Detection of faults in such_x000D_\r\nhigh power transformers is crucial and can help in reducing such faults up to a great extent. The ensemble model is used for the_x000D_\r\ndetection of five faults in three phase transformer. Seven feature selection techniques and seven machine learning models have_x000D_\r\nbeen used, out of which five best possible combinations are selected for ensemble model. Five different operating conditions_x000D_\r\nare discussed namely normal condition, inrush, over excitation, internal fault and external fault. These faults are classified by 30_x000D_\r\nfeatures i.e. 10 samples of three phase differential current have been used. 420 simulated samples have been generated using_x000D_\r\nsim power systems of MATLAB/SIMULINK under different conditions of Y-Y transformer. Cross Validation is done to show the_x000D_\r\nrobustness and consistency of the best predictive models on which ensemble model is applied. The results show that on applying_x000D_\r\nensemble techniques, the accuracy improves significantly to about 85.652% in fault prediction based on the dataset.', 5, 'Name -Tejasvi Roop Singh. Contact - 9855304741. Email ID tejasvichandi@gmail.com  ', ''),
 (40, 'Diabetic Retinopathy Detection System  ', 'Idea is to provide automation to any health related organization to detect whether the patient\'s eyes are diabetic or not._x000D_\r\nUser would simply enter  eye\'s retinal image and we will show the result whether he is diabetic or not.', 3, 'Harsh Batra, 8195912230,harsh.batra7@gmail.com  ', ''),
-(41, 'Perceptron: General Conversation CHATBOT  ', '•	Developed a general conversation Chatbot using deep NLP model (Seq2seq)._x000D_\r\n•	It trains on general conversations (movie’s conversation dataset)._x000D_\r\n•	Output responses in text format but that can easily be converted in speech._x000D_\r\n•	Neural network used in the implementation and training is RNN (Recurrent Neural Network).', 1, 'Vivek Kumar, 7589472496, vivekkumar.be01@gmail.com  ', 'https://github.com/perceptron00/perceptron  '),
+(41, 'Perceptron: General Conversation CHATBOT  ', '• Developed a general conversation Chatbot using deep NLP model (Seq2seq)._x000D_\r\n•  It trains on general conversations (movie’s conversation dataset)._x000D_\r\n•  Output responses in text format but that can easily be converted in speech._x000D_\r\n• Neural network used in the implementation and training is RNN (Recurrent Neural Network).', 1, 'Vivek Kumar, 7589472496, vivekkumar.be01@gmail.com  ', 'https://github.com/perceptron00/perceptron  '),
 (42, 'Information retrieval from web  ', 'The project is to make an information retrieval model to extract information from social media platforms like facebook, twitter etc. The information retrieval will be more like a question answering system, where user can ask any question from a domain and the information retrieval model will retrieve relevant information and provide the result. The initial work will be studying of the existing models of information retrieval and comparing their performance on our data set.', 1, 'Namrata Dimari, 9717158689, namratadimari20@gmail.com  ', ''),
 (43, 'disease detection using X-ray images  ', 'A CNN model trained and tested on set of 25000 which predicts the disease by analysing X-ray image ', 4, 'Shashank,9781940964,shashankshukla9396@gmail.com  ', ''),
 (44, 'Lyrics Generator  ', 'The goal of this project is to generate completely new original lyrics by a trained model.Latest problem is to classify the songs according to genre.This project,when trained on the particular genre of songs,generates lyrics in that particular genre.The model is evaluated by finding the distance between the weighted words(which represents the mood/genre)from the weighted words in the original lyrics.The project could be extended by training the model on the mix of genre and could be repeated with other artists,era -based,could be extended to poetry.These experiments are not limited to text,and can be extended to other ASCII data,computer source code,marked up documents in LateX etc.', 1, 'Shourya tomar,9811839604,shouryatomar24@gmail.com  ', ''),
@@ -451,7 +471,7 @@ INSERT INTO `project` (`pid`, `title`, `summary`, `size`, `leader`, `link`) VALU
 (69, 'Hate Speech Analyser  ', 'The project aims at detecting hate speech on social media and identifying the the handlers which are actively spreading hate speech.', 4, 'Bhrigu  ', ''),
 (70, 'Emotion Recognition  ', 'A trained model which takes user\'s image as an input and based on  facial expressions of the user predicts the mood and recommend a song according to the current mood of the user', 2, 'Raghav Gandotra,9988568945,raghavgandotra34@gmail.com  ', ''),
 (71, 'Stock Prediction  ', 'Predicting return of 30th day for a given date stock information using Long Short Term Memory  Sequential Model.', 2, 'Akshay Sharma, 9757303713, email_akshay@yahoo.com  ', 'https://github.com/piyushbangar/stock_prediction  '),
-(72, 'Automatic Classification of Audio Genres using Ensemble Methods  ', 'Music Genre classification which comes under the area of Music_x000D_\r\nInformation Retrieval (MIR) has been an area of interest among_x000D_\r\nresearchers. A music genre is characterized by various features related to_x000D_\r\ninstrumentation, rhythmic structure, and form of members. To identify_x000D_\r\nthe genre of a given audio file has been a big challenge for the MIR_x000D_\r\ncommunity. This work describes a novel approach for classifying music_x000D_\r\ninto different genres. The feature vector for various audio files is obtained_x000D_\r\nand various machine learning models are trained and their performance_x000D_\r\nmatrix is computed accordingly. An ensemble model is proposed to_x000D_\r\nimprove the performance of the usual classifiers which yields an average_x000D_\r\naccuracy of 85%. Further, K-Fold cross validation has been performed to_x000D_\r\ncheck the consistency of the proposed ensemble model. The superiority_x000D_\r\nof the proposed ensemble model is validated using topsis analysis and a_x000D_\r\nscore of 0.97 is obtained.', 2, 'Parth Rohilla, 8527535298  ', ''),
+(72, 'Automatic Classification of Audio Genres using Ensemble Methods  ', 'Music Genre classification which comes under the area of Music Information Retrieval (MIR) has been an area of interest among researchers. A music genre is characterized by various features related to instrumentation, rhythmic structure, and form of members. To identify the genre of a given audio file has been a big challenge for the MIR community. This work describes a novel approach for classifying music into different genres. The feature vector for various audio files is obtained and various machine learning models are trained and their performance matrix is computed accordingly. An ensemble model is proposed to improve the performance of the usual classifiers which yields an average accuracy of 85%. Further, K-Fold cross validation has been performed to check the consistency of the proposed ensemble model. The superiority of the proposed ensemble model is validated using topsis analysis and a score of 0.97 is obtained.', 2, 'Parth Rohilla, 8527535298  ', ''),
 (73, 'Classification of Resting, Targeted and Non-Targeted states using Convolutional Neural Networks in fMRI images  ', 'Deep learning approaches have been increasingly explored in the field of functional connectivity due to their ability to extract deep features and better classification. However, application of these techniques in classification of brain networks during different task engagement and Resting State Networks (RSN) is still remain largely unexplored._x000D_\r\nHence, in this work, a hybrid deep learning architecture consists of Convolutional Neural Network (CNN), Stacked Auto Encoder (SAE) and Multi Layer Perceptron (MLP) was employed for classification of brain networks estimated during visual target and non-target engagement and RSNs.', 1, 'Rudra C Gupta, 8195901294, rudragupta1997@gmail.com  ', ''),
 (74, 'Gender detection using facial features and Face recognition  ', 'As a part of internship at KocharTech in summer 2018, python code to recognise gender using facial features and pushing the count of male and female faces encountered to database was built. Realtime video of the processing is also made available by running the code on a public amazon server and pushing the output stream using socket programming to a web browser accessible to anyone with the public ip of the server.', 3, 'Akshay Sharma, 9757303713, email_akshay@yahoo.com  ', ''),
 (75, 'Staff-Customer Interactions  ', 'Process a cctv footage to find the time for which staff and customers have interacted and find the average time for which each staff member has interacted.', 4, 'Akshay Sharma, 9757303713, email_akshay@yahoo.com  ', ''),
@@ -470,11 +490,19 @@ INSERT INTO `project` (`pid`, `title`, `summary`, `size`, `leader`, `link`) VALU
 (88, 'Shipment Tracking  ', 'Use shipment Id or container no of shipment and track it\'s stauts. Explore various websites,scrap them and get relevant information. Project done during internship at Unilever.', 1, 'Mehardeep Singh,9914420783, mehar8561@gmail.com  ', ''),
 (89, 'Real Time Rice Quality Prediction  ', 'System automate and provides the quality assessment of rice grains based on its shape, length, chalkiness and internal damage of rice._x000D_\r\n', 4, 'sakshi bhatia, 73073757271,bhatiasakshi5@gmail.com  ', ''),
 (90, 'Toxicity of Gas In Air  ', 'Idea was to predict the most dangerous gas so as to design a optimal sensor to purify the gas . Since there can be various gas present in the air , therefore installing the purifier/ sensor for each of them wil not be cost efficient . Therefore using ML to predict the most dangerous gas in the air one can optimise it\'s devise design .', 1, 'Konark Nigam, 8195914675, nigamkonark51@gmail.com  ', ''),
-(91, 'Autonomous Help Desk System  ', 'The idea was to automate the process of help desk in any organisation , institution or any industry (which is primary required ). Since the help desk system is a process that requires a lot of interactions with people therefore the system is desinged keeping in mind the above formule._x000D_\r\nAt first the system detects the gender of the person and ask for query . Then the query of the subject is recorded answer of which is searched in the predesigned database . If the system do not have pre saved answers for query then the system learns the and and store in the database and hence learns to answer the query ._x000D_\r\nThe whole process uses Supervised learning method for the training and testing ._x000D_\r\nThe domain of the project was restricted to institution .', 4, 'Konark Nigam, 8195914675, nigamkonark51@gmail.com  ', ''),
-(1001, 'Kaggle-MNIST Dataset, Titanic Dataset, Housing prices', 'Output digit of MNIST dataset using CNN.(Accuracy:98.8%)<br>Output if passenger survived in Titanic Disaster.(Top 7%)<br>Using regression techniques to predict Sales Prices(Top)', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', 'https://www.kaggle.com/kartik118'),
-(1002, 'Movie Recommendation System on dataset from lightFM library.', 'Recommend Movie to a user using LightFM model', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', ''),
-(1003, 'HAM or SPAM', 'NLP script to classify mail as HAM or SPAM', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', ''),
-(1004, 'Sales Prediction (Competition)', 'Used ARIMA model to predict Sales of Company(ZS YDS competetion (328/6000+participants))', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', '');
+(91, 'Autonomous Help Desk System  ', 'The idea was to automate the process of help desk in any organization , institution or any industry (which is primary required ). Since the help desk system is a process that requires a lot of interactions with people therefore the system is designed keeping in mind the above formula. At first the system detects the gender of the person and ask for query. Then the query of the subject is recorded answer of which is searched in the previously designed database. If the system do not have previously saved answers for query then the system learns the and and store in the database and hence learns to answer the query. The whole process uses Supervised learning method for the training and testing. The domain of the project was restricted to institution.', 4, 'Konark Nigam, 8195914675, nigamkonark51@gmail.com  ', ''),
+(101, 'Kaggle-MNIST Dataset, Titanic Dataset, Housing prices', 'Output digit of MNIST dataset using CNN.(Accuracy:98.8%)<br>Output if passenger survived in Titanic Disaster.(Top 7%)<br>Using regression techniques to predict Sales Prices(Top)', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', 'https://www.kaggle.com/kartik118'),
+(102, 'Movie Recommendation System on dataset from lightFM library.', 'Recommend Movie to a user using LightFM model', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', ''),
+(103, 'HAM or SPAM', 'NLP script to classify mail as HAM or SPAM', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', ''),
+(104, 'Sales Prediction (Competition)', 'Used ARIMA model to predict Sales of Company(ZS YDS competetion (328/6000+participants))', 1, 'Kartik Saxena (kartik09gwl@gmail.com)', ''),
+(105, 'Predicting student college admission using neural networks', 'Predicting student college admission to US colleges using feature like GRE scores, college ranking and GPA.', 1, 'Devanshu Narula', 'https://github.com/devanshu-narula/College-Admission-Prediction'),
+(106, '\r\nTV Script Generator\r\n', '\r\nUsing LSTM to generate TV scripts. Can be further extended to generate Movie scripts and Songs, based on the training data.\r\n', 1, 'Devanshu Narula', '\r\nhttps://github.com/devanshu-narula/TV-Script-Generator\r\n'),
+(107, '\r\nTime series analysis on Ground Ozone levels of Patiala city\r\n', '\r\nWorked on dataset of ground ozone levels(measured hourly) collected by Thapar Weather department. Forecasting done for future using Rolling ARIMA and LSTM.\r\n', 1, 'Devanshu Narula', '\r\nhttps://github.com/devanshu-narula/Ground-Ozone-Level-Time-Series\r\n'),
+(108, '\r\nSentiment Analysis on IMDB Dataset\r\n', '\r\nPredicting Movie review tones on the IMDB Movie Review dataset. Generated features using text analysis on the reviews and trained a neural network for further predictions.\r\n', 1, 'Devanshu Narula', '\r\nhttps://github.com/devanshu-narula/IMDB-Dataset-Sentiment-analysis\r\n'),
+(109, '\r\nTOX 2021: P53(Cancer molecule) activity prediction\r\n', '\r\nPredicting how P53 molecules will react when it comes in contact with other foreign agents. P53 molecule is the cancer molecule and therefore this project has uses in test of drugs in medical industry.\r\n', 1, 'Devanshu Narula', '\r\n\r\n'),
+(110, '\r\nLet Me See App for helping visually impaired people\r\n', '\r\nPrototype of an app to help the visually impaired people move around freely and help read out media using audio cues. Objectives achieved were Object detection, Text detection and Text to speech.\r\n', 1, 'Devanshu Narula', '\r\nhttps://github.com/devanshu-narula/Let-Me-See\r\n'),
+(111, '\r\nDepressed person detection using Text Processing and Sentiment Analysis on Twitter Data\r\n', '\r\nUsing text analysis to predict if a person is depressed or not. Scraped tweets using a Twiter API to collect database. Based on research papers selected features to look for in tweets of depressed people and then trained a model to predict the outcome for any Twitter user.\r\n', 1, 'Devanshu Narula', '\r\nhttps://github.com/devanshu-narula/SensesFinal-master\r\n'),
+(112, '\r\nDog Breed App\r\n', '\r\nDog breed prediction using images of the subject. Project uses RESNET50 for transfer learning and uses CNN for prediction.\r\n', 1, 'Devanshu Narula', '\r\nhttps://github.com/devanshu-narula/Dog_Breed_App\r\n');
 
 -- --------------------------------------------------------
 
@@ -645,7 +673,18 @@ INSERT INTO `technique` (`pid`, `value`) VALUES
 (90, 'ML'),
 (90, 'hybrid'),
 (91, 'ML'),
-(91, 'CNN');
+(91, 'CNN'),
+(106, 'LSTM'),
+(106, 'RNN'),
+(107, 'LSTM'),
+(107, 'ARIMA'),
+(108, 'ML'),
+(108, 'ANN'),
+(109, 'ML'),
+(110, 'ML'),
+(110, 'transfer learning'),
+(112, 'CNN'),
+(111, 'ML');
 
 -- --------------------------------------------------------
 
@@ -730,7 +769,6 @@ INSERT INTO `tools` (`pid`, `value`) VALUES
 (28, 'python'),
 (29, 'python'),
 (30, 'assembly'),
-(31, 'assembly'),
 (32, 'r'),
 (33, 'matlab'),
 (34, 'python'),
@@ -873,7 +911,19 @@ INSERT INTO `tools` (`pid`, `value`) VALUES
 (90, 'matlab'),
 (91, 'python'),
 (91, 'tensorflow'),
-(91, 'opencv');
+(91, 'opencv'),
+(111, 'python'),
+(112, 'python'),
+(112, 'tensorflow'),
+(112, 'keras'),
+(106, 'tensorflow'),
+(110, 'python'),
+(110, 'tensorflow'),
+(109, 'R'),
+(108, 'python'),
+(107, 'python'),
+(107, 'keras'),
+(106, 'python');
 
 --
 -- Indexes for dumped tables
@@ -923,7 +973,7 @@ ALTER TABLE `tools`
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1005;
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1013;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
