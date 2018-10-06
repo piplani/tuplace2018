@@ -12,6 +12,7 @@
 	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
+	<a href="contact.php"><div id="contact-us">Contact Us</div></a>
 	<div class="jumbotron jumbotron-main mb-4">
 		<center>
 			<h1>ProjecTU</h1>

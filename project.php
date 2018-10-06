@@ -11,6 +11,7 @@
 	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
+	<a href="contact.php"><div id="contact-us">Contact Us</div></a>
 	<div class="jumbotron jumbotron-main mb-4" style="height: 180px;">
 		<center>
 			<h1>ProjecTU</h1>
@@ -37,9 +38,9 @@
 								$pid.'. '.
 								$row['title'].
 							'</h1>
-							<p class="lead">
-								<a>'.$row['leader'].'</a>
-							</p>
+							<p class="lead" title="Hidden for privacy concerns" style="cursor:pointer;">
+								Developer(s): '.substr($row['leader'],0,10)."...".
+							'</p>
 							<hr>
 							<p>'.$team.'</p>
 							<p>'.$row['summary'].'</p>';
