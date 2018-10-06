@@ -38,9 +38,11 @@
 								$pid.'. '.
 								$row['title'].
 							'</h1>
-							<p class="lead" title="Hidden for privacy concerns" style="cursor:pointer;">
-								Developer(s): '.substr($row['leader'],0,10)."...".
-							'</p>
+							<div title="Hidden for privacy concerns" style="cursor:default;">
+								<p class="lead">
+									Developer(s): '.substr($row['leader'],0,10)."...".
+							'	</p>
+							</div>
 							<hr>
 							<p>'.$team.'</p>
 							<p>'.$row['summary'].'</p>';

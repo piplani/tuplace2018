@@ -14,7 +14,11 @@
 </head>
 
 <body>
-	<a href="index.php"><div id="contact-us">Home</div></a>
+	<a href="index.php">
+		<div id="contact-us">
+			<i class="fas fa-home"></i>&nbsp;Home
+		</div>
+	</a>
 	<div class="jumbotron jumbotron-main mb-4">
 		<center>
 			<br>
